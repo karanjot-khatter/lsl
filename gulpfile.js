@@ -11,20 +11,20 @@ var eol = require('gulp-eol');
 sass.compiler = require('sass');
 
 gulp.task('sass', function () {
-    return gulp.src('./var/view_preprocessed/pub/static/frontend/Magento/lsl/en_GB/sass/*.scss')
+    return gulp.src('./pub/css/lsl/en_GB/sass/*.scss')
         .pipe(sass({fiber: Fiber}).on('error', sass.logError))
         .pipe(rename(function(path){
             path.dirname = path.dirname.replace('sass', 'css');
         }))
-        .pipe(gulp.dest('./var/view_preprocessed/pub/static/frontend/Magento/lsl/en_GB/css/'));
+        .pipe(gulp.dest('./pub/css/lsl/en_GB/css/'));
 });
 
 gulp.task('sass:watch', function () {
-    gulp.watch('./var/view_preprocessed/pub/static/frontend/Magento/lsl/en_GB/sass/*.scss', gulp.series('sass'));
+    gulp.watch('./pub/css/lsl/en_GB/sass/*.scss', gulp.series('sass'));
 });
 
 gulp.task('split-css', function () {
-    return gulp.src(['./var/view_preprocessed/pub/static/frontend/Magento/lsl/en_GB/css/*.css'])
+    return gulp.src(['./pub/css/lsl/en_GB/css/*.css'])
         .pipe(splitMediaQueries({
             breakpoint: 520, // default is 768
         }))
@@ -49,9 +49,9 @@ gulp.task('split-css', function () {
         .pipe(clip())
         // Add new line to end of file.
         .pipe(eol())
-        .pipe(gulp.dest('./var/view_preprocessed/pub/static/frontend/Magento/lsl/en_GB/css/'))
+        .pipe(gulp.dest('./pub/css/lsl/en_GB/css/'))
 });
 
 gulp.task('watch', function() {
-    gulp.watch('./var/view_preprocessed/pub/static/frontend/Magento/lsl/en_GB/sass/*.scss', gulp.series('sass', 'split-css'));
+    gulp.watch('./pub/css/lsl/en_GB/sass/*.scss', gulp.series('sass', 'split-css'));
 });
