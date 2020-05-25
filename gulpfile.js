@@ -26,12 +26,9 @@ gulp.task('sass:watch', function () {
 gulp.task('split-css', function () {
     return gulp.src(['./var/view_preprocessed/pub/static/frontend/Magento/lsl/en_GB/css/*.css'])
         .pipe(splitMediaQueries({
-            // If you change this number you will also need to change the media query in
-            // app/code/local/JustKampers/Page/Block/Html/Head.php _prepareStaticAndSkinElements
             breakpoint: 520, // default is 768
         }))
         .pipe(rename(function(path){
-            // splitMediaQueries likes to duplicate path a bit e.g. /v2/css/v2/css/styles-above-425.css
             // Remove the duplicate section of the path here.
             var split = path.dirname.split('/');
             for ( var i = 0; i < split.length - 1; i++ ) {

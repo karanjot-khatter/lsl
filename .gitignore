@@ -62,6 +62,7 @@ atlassian*
 
 /var/*
 !/var/.htaccess
+!/var/view_preprocessed/pub/static/frontend/Magento/lsl
 /vendor/*
 !/vendor/.htaccess
 /generated/*
