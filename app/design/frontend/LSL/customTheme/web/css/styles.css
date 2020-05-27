@@ -1,0 +1,13 @@
+/** custom css file test - Homepage */
+
+span.not-logged-in {
+  left: -35px;
+  position: relative;
+}
+
+/** custom css file test - Homepage */
+
+footer * {
+  color: red !important;
+}
+
