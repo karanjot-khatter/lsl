@@ -8,3 +8,42 @@ span.not-logged-in{
 footer * {
   color: red !important;
 }
+
+/** header links customisation */
+
+.header.panel > .header.links{
+  float:none !important;
+}
+
+ul.header.links{
+
+  .navbar-left{
+    float: left!important;
+
+    ul.social-icons{
+      display: inline-block!important;
+
+      li.a{
+        color: #fff;
+        text-indent: -9999px;
+        overflow: hidden;
+        /* width: 20px; */
+        width: 100px;
+        display: inline-block;
+        height: 28px;
+
+        .icon{
+          background-image: url(../images/social-media.png);
+          background-position: -440px 0;
+          background-size: auto 25px;
+          background-repeat: no-repeat;
+          display: block;
+          width: 30px;
+          height: 28px;
+        }
+      }
+    }
+  }
+
+}
+

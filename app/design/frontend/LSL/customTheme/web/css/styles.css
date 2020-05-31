@@ -1,13 +1,47 @@
-/** custom css file test - Homepage */
+/** custom css file test */
 
 span.not-logged-in {
   left: -35px;
   position: relative;
 }
 
-/** custom css file test - Homepage */
+/** custom css file test */
 
 footer * {
   color: red !important;
+}
+
+/** header links customisation */
+
+.header.panel > .header.links {
+  float: none !important;
+}
+
+ul.header.links .navbar-left {
+  float: left !important;
+}
+
+ul.header.links .navbar-left ul.social-icons {
+  display: inline-block !important;
+}
+
+ul.header.links .navbar-left ul.social-icons li.a {
+  color: #fff;
+  text-indent: -9999px;
+  overflow: hidden;
+  /* width: 20px; */
+  width: 100px;
+  display: inline-block;
+  height: 28px;
+}
+
+ul.header.links .navbar-left ul.social-icons li.a .icon {
+  background-image: url(../images/social-media.png);
+  background-position: -440px 0;
+  background-size: auto 25px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 28px;
 }
 

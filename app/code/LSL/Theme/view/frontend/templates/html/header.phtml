@@ -5,11 +5,20 @@
  */
 
 /**
- * @var \Magento\Theme\Block\Html\Header $block
+ * @var \LSL\Theme\Block\Html\Header $block
  */
 $welcomeMessage = $block->getWelcome();
 ?>
 <?php if ($block->getShowPart() == 'welcome') : ?>
+
+    <div class="navbar-left">
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/lovestruckldn/" target="_blank"  title="Facebook"><span class="icon facebook"></span><span class="label hidden">Facebook</span></a></li>
+            <li><a href="https://www.pinterest.co.uk/LovestruckLDN/" target="_blank"  title="Pinterest"><span class="icon pinterest"></span><span class="label hidden">Pinterest</span></a></li>
+            <li><a href="https://www.instagram.com/lovestruckldn/" target="_blank"  title="Instagram"><span class="icon instagram"></span><span class="label hidden">Instagram</span></a></li>
+        </ul>
+    </div>
+
     <li class="greet welcome" data-bind="scope: 'customer'">
         <!-- ko if: customer().fullname  -->
         <span class="logged-in"
@@ -22,6 +31,7 @@ $welcomeMessage = $block->getWelcome();
         <?= $block->getBlockHtml('header.additional') ?>
         <!-- /ko -->
     </li>
+
     <script type="text/x-magento-init">
     {
         "*": {
