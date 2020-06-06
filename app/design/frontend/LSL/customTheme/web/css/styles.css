@@ -1,16 +1,3 @@
-/** custom css file test */
-
-span.not-logged-in {
-  left: -35px;
-  position: relative;
-}
-
-/** custom css file test */
-
-footer * {
-  color: red !important;
-}
-
 /** header links customisation */
 
 .header.panel > .header.links {
@@ -19,23 +6,23 @@ footer * {
 
 ul.header.links .navbar-left {
   float: left !important;
+  left: -30px;
+  position: relative;
 }
 
 ul.header.links .navbar-left ul.social-icons {
   display: inline-block !important;
 }
 
-ul.header.links .navbar-left ul.social-icons li.a {
-  color: #fff;
-  text-indent: -9999px;
-  overflow: hidden;
-  /* width: 20px; */
-  width: 100px;
+ul.header.links .navbar-left ul.social-icons li {
+  list-style-type: none;
   display: inline-block;
+  color: transparent;
+  vertical-align: middle;
   height: 28px;
 }
 
-ul.header.links .navbar-left ul.social-icons li.a .icon {
+ul.header.links .navbar-left ul.social-icons li .icon {
   background-image: url(../images/social-media.png);
   background-position: -440px 0;
   background-size: auto 25px;
@@ -43,5 +30,27 @@ ul.header.links .navbar-left ul.social-icons li.a .icon {
   display: block;
   width: 30px;
   height: 28px;
+}
+
+ul.header.links .navbar-left ul.social-icons li span.icon.facebook {
+  background-position: -716px 2px;
+}
+
+ul.header.links .navbar-left ul.social-icons li span.icon.instagram {
+  background-position: -748px 2px;
+}
+
+ul.header.links .navbar-left ul.social-icons li span.icon.pinterest {
+  background-position: -817px 2px;
+}
+
+ul.header.links .navbar-left ul.social-icons li .label {
+  position: relative;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  top: -5px;
+  left: 5px;
+  font-size: 1.2em;
 }
 

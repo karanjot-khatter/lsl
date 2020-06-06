@@ -1,14 +1,3 @@
-/** custom css file test */
-span.not-logged-in{
-  left: -35px;
-  position: relative;
-}
-
-/** custom css file test */
-footer * {
-  color: red !important;
-}
-
 /** header links customisation */
 
 .header.panel > .header.links{
@@ -19,20 +8,19 @@ ul.header.links{
 
   .navbar-left{
     float: left!important;
+    left: -30px;
+    position: relative;
 
     ul.social-icons{
       display: inline-block!important;
 
-      li.a{
-        color: #fff;
-        text-indent: -9999px;
-        overflow: hidden;
-        /* width: 20px; */
-        width: 100px;
+      li {
+        list-style-type: none;
         display: inline-block;
+        color: transparent;
+        vertical-align: middle;
         height: 28px;
-
-        .icon{
+        .icon {
           background-image: url(../images/social-media.png);
           background-position: -440px 0;
           background-size: auto 25px;
@@ -41,9 +29,34 @@ ul.header.links{
           width: 30px;
           height: 28px;
         }
+
+        span.icon.facebook
+        {
+          background-position: -716px 2px;
+        }
+
+        span.icon.instagram
+        {
+          background-position: -748px 2px;
+        }
+
+        span.icon.pinterest{
+          background-position: -817px 2px;
+        }
+
+        .label{
+          position: relative;
+          display: inline;
+          padding: 0;
+          margin: 0;
+          top: -5px;
+          left: 5px;
+          font-size: 1.2em;
+        }
       }
     }
   }
-
 }
+
+
 
