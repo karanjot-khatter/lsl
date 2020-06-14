@@ -58,5 +58,11 @@ ul.header.links{
   }
 }
 
+/** Homepage Content customisation */
+.cms-home{
+  .owl-stage-outer.owl-height{
+    height: 400px !important;
+  }
+}
 
 
