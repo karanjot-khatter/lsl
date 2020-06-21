@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceBlock name="navigation.sections" remove="true"/>
+        <referenceContainer name="page.top">
+            <referenceBlock name="navigation.sections" remove="true"/>
+        </referenceContainer>
+
+        <referenceBlock name="top.links">
+            <referenceBlock name="register-link" remove="true" />
+        </referenceBlock>
     </body>
 </page>

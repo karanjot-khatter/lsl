@@ -1,0 +1,25 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Customer\Block\Account\AuthorizationLink $block */
+
+$dataPostParam = '';
+if ($block->isLoggedIn()) {
+    $dataPostParam = sprintf(" data-post='%s'", $block->getPostParams());
+}
+?>
+<div class="navbar-right">
+    <div class="sign-in">
+        <a <?= /* @noEscape */ $block->getLinkAttributes() ?><?= /* @noEscape */ $dataPostParam ?>>
+            <?= $block->escapeHtml($block->getLabel()) ?>
+        </a>
+    </div>
+    or
+    <div class="register">
+        <a href="http://lsl.mamp/customer/account/create/">Register</a>
+    </div>
+</div>
+

@@ -22,6 +22,12 @@ header.page-header{
   }
 }
 
+@media (max-width:830px) {
+  ul.header.links {
+    height:28px;
+  }
+}
+
 ul.header.links{
 
   .navbar-left{
@@ -82,6 +88,29 @@ ul.header.links{
     font-weight:500;
     vertical-align: top;
   }
+  .navbar-right{
+    display: inline-block;
+    line-height: 2;
+    font-size: 14px;
+    vertical-align: top;
+    float: right;
+
+    a:visited {
+      color: white;
+    }
+    .sign-in, .register {
+      font-weight: 500;
+      display:inline-block;
+    }
+
+  }
+
+  @media (max-width:830px) {
+    .navbar-center {
+      display:none;
+    }
+  }
+
 }
 
 /** Homepage Content customisation */
@@ -165,5 +194,11 @@ ul.header.links{
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
   background: black !important;
 }
+
+#banner-slider-carousel .owl-nav button:focus{
+  outline:none;
+}
+
+
 
 
