@@ -19,18 +19,25 @@ header.page-header{
   .header.panel {
     padding-bottom: 0 !important;
     padding-top: 0 !important;
+    height:28px;
   }
 }
 
 @media (max-width:1200px) {
   ul.header.links {
-    top: 2px;
+    top:0 !important;
+  }
+}
+
+@media (max-width:767px) {
+  header.page-header .header.panel  {
+    height:0;
   }
 }
 
 ul.header.links{
   height:28px;
-  top: -5px;
+  top: -11px;
   position: relative;
   .navbar-left{
     float: left!important;
@@ -176,6 +183,7 @@ ul.header.links{
 
 .copyright{
   font-size:12px;
+  font-weight: 500;
 }
 
 /** Modification to banner */
