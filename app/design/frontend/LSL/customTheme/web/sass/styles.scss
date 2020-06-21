@@ -22,14 +22,16 @@ header.page-header{
   }
 }
 
-@media (max-width:830px) {
+@media (max-width:1200px) {
   ul.header.links {
-    height:28px;
+    top: 2px;
   }
 }
 
 ul.header.links{
-
+  height:28px;
+  top: -5px;
+  position: relative;
   .navbar-left{
     float: left!important;
     left: -50px;
@@ -87,6 +89,8 @@ ul.header.links{
     font-size: 14px;
     font-weight:500;
     vertical-align: top;
+    position:relative;
+    left:15%;
   }
   .navbar-right{
     display: inline-block;
@@ -105,7 +109,7 @@ ul.header.links{
 
   }
 
-  @media (max-width:830px) {
+  @media (max-width:1200px) {
     .navbar-center {
       display:none;
     }

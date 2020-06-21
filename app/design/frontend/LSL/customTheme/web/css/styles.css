@@ -24,6 +24,12 @@ header.page-header .header.panel {
   padding-top: 0 !important;
 }
 
+ul.header.links {
+  height: 28px;
+  top: -5px;
+  position: relative;
+}
+
 ul.header.links .navbar-left {
   float: left !important;
   left: -50px;
@@ -80,6 +86,8 @@ ul.header.links .navbar-center {
   font-size: 14px;
   font-weight: 500;
   vertical-align: top;
+  position: relative;
+  left: 15%;
 }
 
 ul.header.links .navbar-right {
@@ -192,9 +200,9 @@ ul.header.links .navbar-right .register {
   outline: none;
 }
 
-@media (max-width: 830px){
+@media (max-width: 1200px){
 ul.header.links {
-  height: 28px;
+  top: 2px;
 }
 
 ul.header.links .navbar-center {
