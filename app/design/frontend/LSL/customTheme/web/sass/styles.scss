@@ -2,13 +2,31 @@
 
 .header.panel > .header.links{
   float:none !important;
+  width:100%;
+}
+
+.header.panel > .header.links > li.welcome, .header.panel > .header.links > li > a{
+  line-height: 2.0 !important;
+  font-weight: 500;
+}
+
+header.page-header{
+  margin-bottom: 0;
+  a.logo{
+    margin-bottom: 0;
+  }
+
+  .header.panel {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
 }
 
 ul.header.links{
 
   .navbar-left{
     float: left!important;
-    left: -30px;
+    left: -50px;
     position: relative;
 
     ul.social-icons{
@@ -56,6 +74,14 @@ ul.header.links{
       }
     }
   }
+
+  .navbar-center {
+    display: inline-block;
+    line-height: 2;
+    font-size: 14px;
+    font-weight:500;
+    vertical-align: top;
+  }
 }
 
 /** Homepage Content customisation */
@@ -71,6 +97,7 @@ ul.header.links{
     margin-top: 30px;
     h1.title{
       font-family: cursive;
+      margin-bottom: 20px;
     }
     .content.row{
       background-color: #6e716d;
@@ -105,9 +132,38 @@ ul.header.links{
           transform: translate(-50%,-50%) scale(1);
           transition: transform;
         }
+
+        img:hover{
+          transform: translate(-50%, -50%) scale(1.05);
+        }
       }
     }
   }
+}
+
+.copyright{
+  font-size:12px;
+}
+
+/** Modification to banner */
+
+/** Ensure slider buttons always show, not just on hover... */
+#banner-slider-carousel {
+  .owl-nav {
+    opacity: 1 !important;
+  }
+  .owl-dots{
+    opacity: 1 !important;
+  }
+  .owl-nav button{
+    color:black !important;
+    opacity: unset !important;
+    display: unset !important;
+  }
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: black !important;
 }
 
 
