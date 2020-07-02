@@ -2,7 +2,8 @@
 
 .header.panel > .header.links {
   float: none !important;
-  width: 100%;
+  width: 100% !important;
+  top: -11px !important;
 }
 
 .header.panel > .header.links > li.welcome,
@@ -25,9 +26,30 @@ header.page-header .header.panel {
   height: 28px;
 }
 
+.header.content .minicart-wrapper {
+  top: 25px !important;
+}
+
+.header.content form#search_mini_form {
+  top: 25px;
+  position: relative;
+}
+
+.header.content .navigation {
+  background: transparent !important;
+  top: 50px !important;
+  width: 55% !important;
+  left: 15px;
+}
+
+.header.content .navigation li.level0 {
+  font-size: 20px !important;
+  padding: 0 20px 0 0 !important;
+  margin: 0 20px 0 0 !important;
+}
+
 ul.header.links {
   height: 28px;
-  top: -11px;
   position: relative;
 }
 
@@ -99,11 +121,20 @@ ul.header.links .navbar-right {
   float: right;
 }
 
-ul.header.links .navbar-right a:visited {
+ul.header.links .navbar-right a:visited,
+ul.header.links .navbar-right .alink:visited {
   color: white;
 }
 
-ul.header.links .navbar-right .sign-in,
+ul.header.links .navbar-right .sign-in {
+  font-weight: 500;
+  display: inline-block;
+}
+
+ul.header.links .navbar-right .sign-in a {
+  color: white;
+}
+
 ul.header.links .navbar-right .register {
   font-weight: 500;
   display: inline-block;
@@ -202,11 +233,9 @@ ul.header.links .navbar-right .register {
   outline: none;
 }
 
-@media (max-width: 1200px){
-ul.header.links {
-  top: 0 !important;
-}
+/*  Topmenu navigation */
 
+@media (max-width: 1200px){
 ul.header.links .navbar-center {
   display: none;
 }

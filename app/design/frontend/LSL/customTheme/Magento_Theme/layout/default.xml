@@ -8,5 +8,9 @@
         <referenceBlock name="top.links">
             <referenceBlock name="register-link" remove="true" />
         </referenceBlock>
+
+        <referenceBlock name="header-wrapper">
+            <block class="Magento\Theme\Block\Html\Topmenu" name="catalog.topnav" template="Magento_Theme::html/topmenu.phtml" before="-"/>
+        </referenceBlock>
     </body>
 </page>

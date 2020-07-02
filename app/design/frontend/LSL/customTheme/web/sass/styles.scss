@@ -2,7 +2,8 @@
 
 .header.panel > .header.links{
   float:none !important;
-  width:100%;
+  width:100% !important;
+  top: -11px !important;
 }
 
 .header.panel > .header.links > li.welcome, .header.panel > .header.links > li > a{
@@ -23,21 +24,31 @@ header.page-header{
   }
 }
 
-@media (max-width:1200px) {
-  ul.header.links {
-    top:0 !important;
+.header.content{
+  .minicart-wrapper {
+    top: 25px !important;
   }
-}
 
-@media (max-width:767px) {
-  header.page-header .header.panel  {
-    height:0;
+  form#search_mini_form{
+    top: 25px;
+    position: relative;
+  }
+  .navigation {
+    background: transparent !important;
+    top: 50px !important;
+    width: 55% !important;
+    left: 15px;
+
+    li.level0{
+      font-size: 20px !important;
+      padding: 0 20px 0 0 !important;
+      margin: 0 20px 0 0 !important;
+    }
   }
 }
 
 ul.header.links{
   height:28px;
-  top: -11px;
   position: relative;
   .navbar-left{
     float: left!important;
@@ -99,6 +110,13 @@ ul.header.links{
     position:relative;
     left:15%;
   }
+
+  @media (max-width:1200px) {
+    .navbar-center {
+      display:none;
+    }
+  }
+
   .navbar-right{
     display: inline-block;
     line-height: 2;
@@ -106,19 +124,21 @@ ul.header.links{
     vertical-align: top;
     float: right;
 
-    a:visited {
+    a:visited, .alink:visited {
       color: white;
     }
-    .sign-in, .register {
+    .sign-in {
       font-weight: 500;
       display:inline-block;
+
+      a{
+        color:white;
+      }
     }
 
-  }
-
-  @media (max-width:1200px) {
-    .navbar-center {
-      display:none;
+    .register{
+      font-weight: 500;
+      display:inline-block;
     }
   }
 
@@ -211,6 +231,58 @@ ul.header.links{
   outline:none;
 }
 
+/*  Topmenu navigation */
 
+@media (min-width:768px) {
 
+  .header.content {
+    padding: 0 10px 0 !important;
+    height: 30px;
 
+    .navigation {
+      li.level0 {
+        border-right: 1px solid pink !important;
+      }
+
+      li.level0:last-child {
+        border-right: none !important;
+      }
+    }
+  }
+}
+
+@media (max-width:767px) {
+  header.page-header .header.panel  {
+    height:0;
+  }
+}
+
+@media (min-width:768px) and (max-width: 1200px){
+
+  .header.panel > .header.links {
+    top: 0 !important;
+  }
+
+  .header.content{
+
+    .minicart-wrapper {
+      top: -10px!important;
+    }
+
+    form#search_mini_form{
+      top: -10px !important;
+    }
+
+    .navigation {
+      width: 70% !important;
+      left: 100px;
+      top: 70px !important;
+
+      li.level0 {
+        font-size:16px !important;
+        padding: 0 15px 0 0 !important;
+        margin: 0 15px 0 0 !important;
+      }
+    }
+  }
+}

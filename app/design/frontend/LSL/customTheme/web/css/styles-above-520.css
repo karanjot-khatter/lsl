@@ -1,0 +1,41 @@
+@media (min-width: 768px){
+.header.content {
+  padding: 0 10px 0 !important;
+  height: 30px;
+}
+
+.header.content .navigation li.level0 {
+  border-right: 1px solid pink !important;
+}
+
+.header.content .navigation li.level0:last-child {
+  border-right: none !important;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+.header.panel > .header.links {
+  top: 0 !important;
+}
+
+.header.content .minicart-wrapper {
+  top: -10px !important;
+}
+
+.header.content form#search_mini_form {
+  top: -10px !important;
+}
+
+.header.content .navigation {
+  width: 70% !important;
+  left: 100px;
+  top: 70px !important;
+}
+
+.header.content .navigation li.level0 {
+  font-size: 16px !important;
+  padding: 0 15px 0 0 !important;
+  margin: 0 15px 0 0 !important;
+}
+}
+
