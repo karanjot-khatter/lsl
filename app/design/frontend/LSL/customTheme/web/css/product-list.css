@@ -1,0 +1,12 @@
+.catalog-category-view .toolbar-sorter select#sorter {
+  background-color: white;
+}
+
+.catalog-category-view .product-item .product-item-name {
+  font-size: 22px;
+}
+
+.catalog-category-view .product-item .price-box .price {
+  font-size: 22px;
+}
+

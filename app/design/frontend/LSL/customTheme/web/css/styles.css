@@ -140,6 +140,10 @@ ul.header.links .navbar-right .register {
   display: inline-block;
 }
 
+ul.header.links .navbar-right .register a {
+  color: white;
+}
+
 /** Homepage Content customisation */
 
 .cms-home {

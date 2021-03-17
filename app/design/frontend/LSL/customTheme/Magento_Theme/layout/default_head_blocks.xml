@@ -4,5 +4,6 @@
         <css src="css/bootstrap.css" />
         <css src="css/styles.css" />
         <css src="css/styles-above-520.css" />
+        <css src="css/product-list.css" />
     </head>
 </page>
