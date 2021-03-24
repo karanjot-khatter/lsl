@@ -2,5 +2,8 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="category.product.addto.compare" remove="true"/>
+        <referenceBlock name="breadcrumbs" remove="true" />
+        <referenceBlock name="page.main.title" remove="true" />
+        <referenceBlock name="sidebar.additional" remove="true"/>
     </body>
 </page>

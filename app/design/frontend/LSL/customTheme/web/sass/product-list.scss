@@ -1,8 +1,16 @@
 .catalog-category-view {
+
+    .sidebar.sidebar-main {
+        position: sticky;
+        padding-left: 0;
+        top: 10px;
+    }
     .toolbar-sorter select#sorter{
     background-color:white;
     }
-
+    .product-item:hover{
+        transform : scale(1.05);
+    }
     .product-item {
         .product-item-name {
             font-size: 22px;
@@ -10,6 +18,16 @@
 
         .price-box .price{
             font-size:22px;
+        }
+
+        .product-item-actions{
+            .actions-primary{
+                .tocart, .tocart:hover{
+                    background:pink;
+                    border:none;
+                    font-size:16px;
+                }
+            }
         }
 
     }

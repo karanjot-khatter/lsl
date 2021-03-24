@@ -1,5 +1,15 @@
+.catalog-category-view .sidebar.sidebar-main {
+  position: sticky;
+  padding-left: 0;
+  top: 10px;
+}
+
 .catalog-category-view .toolbar-sorter select#sorter {
   background-color: white;
+}
+
+.catalog-category-view .product-item:hover {
+  transform: scale(1.05);
 }
 
 .catalog-category-view .product-item .product-item-name {
@@ -8,5 +18,12 @@
 
 .catalog-category-view .product-item .price-box .price {
   font-size: 22px;
+}
+
+.catalog-category-view .product-item .product-item-actions .actions-primary .tocart,
+.catalog-category-view .product-item .product-item-actions .actions-primary .tocart:hover {
+  background: pink;
+  border: none;
+  font-size: 16px;
 }
 
