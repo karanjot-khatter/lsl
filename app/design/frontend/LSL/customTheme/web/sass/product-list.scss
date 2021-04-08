@@ -1,5 +1,25 @@
 .catalog-category-view {
 
+    .toolbar-products {
+        padding: 10px;
+        background-color: #f0f0f0f0;
+
+        .field.limiter{
+            font-size:12px;
+            select#limiter {
+                background-color: white;
+            }
+        }
+        p#toolbar-amount {
+            font-size: 12px;
+            text-transform: capitalize;
+        }
+
+        .toolbar-sorter.sorter {
+                font-size:12px
+        }
+    }
+
     .sidebar.sidebar-main {
         position: sticky;
         padding-left: 0;

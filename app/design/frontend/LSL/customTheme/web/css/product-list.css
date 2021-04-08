@@ -1,3 +1,25 @@
+.catalog-category-view .toolbar-products {
+  padding: 10px;
+  background-color: #f0f0f0f0;
+}
+
+.catalog-category-view .toolbar-products .field.limiter {
+  font-size: 12px;
+}
+
+.catalog-category-view .toolbar-products .field.limiter select#limiter {
+  background-color: white;
+}
+
+.catalog-category-view .toolbar-products p#toolbar-amount {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.catalog-category-view .toolbar-products .toolbar-sorter.sorter {
+  font-size: 12px;
+}
+
 .catalog-category-view .sidebar.sidebar-main {
   position: sticky;
   padding-left: 0;

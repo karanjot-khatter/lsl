@@ -239,6 +239,43 @@ ul.header.links .navbar-right .register a {
 
 /*  Topmenu navigation */
 
+/*  Footer subscription */
+
+.page-footer .footer.content .block {
+  float: unset;
+  border-bottom: 1px solid;
+  max-width: 100%;
+  padding-bottom: 20px;
+  width: unset;
+}
+
+.page-footer .footer.content .block label {
+  width: 220px;
+}
+
+.page-footer .footer.content .block .actions .action.subscribe {
+  background: #ff000078;
+  border: none;
+  color: white;
+  height: 32px;
+  padding: 6px;
+}
+
+/*  Footer links */
+
+.page-footer .footer.content .links {
+  display: flex;
+}
+
+.page-footer .footer.content .links li {
+  padding: 0 20px;
+  border-right: 1px solid pink;
+}
+
+.page-footer .footer.content .links li:last-child {
+  border-right: none;
+}
+
 @media (max-width: 1200px){
 ul.header.links .navbar-center {
   display: none;
