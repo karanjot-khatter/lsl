@@ -2,6 +2,26 @@
     .product-info-main {
         .product.attribute.sku{
             font-size:18px;
+            color: gray;
+        }
+        .product-info-stock-sku{
+            padding-top:10px;
+        }
+        .product-reviews-summary{
+            float:none;
+            border-bottom: 1px solid #c1c1c1;
+        }
+        .product-info-price{
+            margin-bottom:0;
+        }
+        .product-add-form{
+            button#product-addtocart-button{
+                background-color: pink;
+                border: none;
+            }
+        }
+        .product.attribute.overview{
+            font-size:16px;
         }
     }
 }

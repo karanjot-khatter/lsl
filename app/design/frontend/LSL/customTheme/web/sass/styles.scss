@@ -43,6 +43,7 @@ header.page-header{
       font-size: 20px !important;
       padding: 0 20px 0 0 !important;
       margin: 0 20px 0 0 !important;
+      text-transform: capitalize !important;
     }
   }
 }
@@ -158,6 +159,66 @@ ul.header.links{
   .top-picks
   {
     margin-top: 30px;
+  .top-picks-content {
+      position: relative;
+      background: radial-gradient(ellipse farthest-corner at 0 -1000%, pink 0%, pink 90%, transparent 90%);
+      color: #fff;
+      padding: 2px;
+      text-align: left;
+      z-index: 1;
+      width: 65%;
+      height: 70px;
+      h1.top-text {
+          position: relative;
+          left: 6%;
+          margin-bottom: 0;
+          margin-top: 7px;
+          width: 75%;
+          font-size: 22px;
+      }
+      h1.bottom-text {
+          font-size: 22px;
+          position: relative;
+          left: 6%;
+          margin-top: 0;
+          margin-bottom: 7px;
+          width: 75%;
+          font-weight: 700;
+      }
+  }
+  .top-spring-images {
+      background-color: lightgray;
+      position: relative;
+      top: -60px;
+      margin: -15px;
+      padding-top: 100px;
+      padding-bottom: 30px;
+      .content-block{
+          position: relative;
+          border: 8px solid #fff;
+          .image-bottom {
+              background-color: #fff;
+              height: 100px;
+
+              i.fas.fa-angle-right {
+                  float: right;
+                  font-size: 22px;
+                  color: black;
+                  position: relative;
+                  top: -50px;
+              }
+
+              h1.text {
+                  color: #234959;
+                  margin: 0;
+                  font-weight: 700;
+                  left: 10px;
+                  position: relative;
+                  top: 5px;
+              }
+          }
+      }
+  }
     h1.title{
       font-family: cursive;
       margin-bottom: 20px;
@@ -169,7 +230,6 @@ ul.header.links{
       margin-right:0;
       .content-block{
         position: relative;
-        height: 470px;
         border: 8px solid #fff;
         a{
           height: 380px;
@@ -320,6 +380,7 @@ ul.header.links{
         font-size:16px !important;
         padding: 0 15px 0 0 !important;
         margin: 0 15px 0 0 !important;
+        text-transform: capitalize !important;
       }
     }
   }
