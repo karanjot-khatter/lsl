@@ -293,6 +293,7 @@ return [
         'Klarna_Ordermanagement' => 1,
         'Klarna_Onsitemessaging' => 1,
         'Klarna_Kp' => 1,
+        'LSL_CustomAttribute' => 1,
         'LSL_Theme' => 1,
         'Mageplaza_Core' => 0,
         'Mageplaza_BannerSlider' => 0,
