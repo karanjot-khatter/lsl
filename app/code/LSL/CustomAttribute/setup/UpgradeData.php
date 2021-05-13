@@ -36,8 +36,9 @@ ModuleContextInterface $context
 ) {
 $setup->startSetup();
 
-if (version_compare($context->getVersion(), '0.0.2') < 0) {
-$this->upgradeSchema201($setup);
+if (version_compare($context->getVersion(), '0.0.3') < 0) {
+//$this->upgradeSchema201($setup);
+$this->upgradeSchema301($setup);
 }
 
 $setup->endSetup();
@@ -54,5 +55,21 @@ $eavSetup->removeAttribute(
 \Magento\Customer\Model\Customer::ENTITY,
 'username'
 );
+}
+
+private function upgradeSchema301(ModuleDataSetupInterface $setup)
+{
+    $eavSetup = $this->eavSetupFactory->create(['setup' => $setup]);
+
+    $eavSetup->addAttribute(\Magento\Customer\Model\Customer::ENTITY, 'username', [
+        'type' => 'varchar',
+        'label' => 'Username',
+        'input' => 'text',
+        'required' => false,
+        'visible' => true,
+        'user_defined' => true,
+        'position' =>999,
+        'system' => 0,
+    ]);
 }
 }
